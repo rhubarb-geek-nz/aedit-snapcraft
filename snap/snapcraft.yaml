@@ -1,0 +1,35 @@
+---
+name: aedit
+base: core22
+version: '1.1.0.59'
+icon: meta/gui/icon.png
+license: GPL-3.0
+contact: rhubarb-geek-nz@users.sourceforge.net
+website: https://aedit.sf.net
+source-code: https://github.com/rhubarb-geek-nz/aedit-snapcraft.git
+summary: Text Editor based on Intel ISIS-II aedit
+description: |
+  Text editor based on interface from Intel ISIS-II aedit, which in turn was based on its big brother alter.
+  This was originally written in the mid 80s on QNX running on an 8088, with a CBM-64 acting as the console.
+
+grade: stable
+confinement: classic
+architectures:
+  - build-on: s390x
+  - build-on: ppc64el
+  - build-on: arm64
+  - build-on: armhf
+  - build-on: amd64
+  - build-on: i386
+
+parts:
+  aedit:
+    source: https://sourceforge.net/projects/aedit/files/src/aedit-68.tar.gz
+    plugin: make
+    make-parameters: ["CFLAGS+=\"-Wall -Werror\"", "aedit"]
+    build-attributes:
+      - enable-patchelf
+
+apps:
+  aedit:
+    command: usr/bin/aedit
