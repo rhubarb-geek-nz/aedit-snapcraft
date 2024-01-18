@@ -1,7 +1,7 @@
 ---
 name: aedit
 base: core22
-version: '1.1.0.59'
+version: '1.1.0.69'
 icon: meta/gui/icon.png
 license: GPL-3.0
 contact: rhubarb-geek-nz@users.sourceforge.net
@@ -24,7 +24,7 @@ architectures:
 
 parts:
   aedit:
-    source: https://sourceforge.net/projects/aedit/files/src/aedit-68.tar.gz
+    source: https://sourceforge.net/projects/aedit/files/src/aedit-69.tar.gz
     plugin: make
     make-parameters: ["CFLAGS+=\"-Wall -Werror\"", "aedit"]
     build-attributes:
