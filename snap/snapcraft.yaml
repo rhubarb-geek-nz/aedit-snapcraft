@@ -33,6 +33,7 @@ architectures:
   - build-on: armhf
   - build-on: amd64
   - build-on: i386
+  - build-on: riscv64
 
 parts:
   aedit:
