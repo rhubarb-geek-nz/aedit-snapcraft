@@ -22,7 +22,7 @@ $ lxd init --auto
 The package description is in [snapcraft.yaml](snap/snapcraft.yaml).
 
 - The source is from [aedit](https://github.com/rhubarb-geek-nz/aedit).
-- The base is core22 for the majority environments or core18 for i386
+- The base is core20 for the majority environments or core18 for i386
 - The program runs with `strict` sandboxing and uses interfaces to access files
 - The `make` plugin is used to perform `make` followed by `make install`.
 
