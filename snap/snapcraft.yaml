@@ -39,9 +39,7 @@ parts:
   aedit:
     source: https://github.com/rhubarb-geek-nz/aedit/archive/refs/tags/1.1.71.tar.gz
     plugin: make
-    make-parameters: ["CFLAGS+=\"-Wall -Werror\"", "aedit"]
-    build-attributes:
-      - enable-patchelf
+    make-parameters: [CFLAGS+="-Wall -Werror", aedit]
 
 apps:
   aedit:
