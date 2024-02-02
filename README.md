@@ -37,13 +37,13 @@ $ snapcraft
 You can examine the contents with 
 
 ```
-$ unsquashfs -l aedit_1.1.71_amd64.snap
+$ unsquashfs -l aedit_1.1.82_amd64.snap
 ```
 
 Install with
 
 ```
-$ sudo snap install aedit_1.1.71_amd64.snap --dangerous
+$ sudo snap install aedit_1.1.82_amd64.snap --dangerous
 ```
 
 This can now be tested by running
@@ -67,7 +67,7 @@ $ sudo snap remove aedit
 The `riscv64` snap package is built using Ubuntu 22.04 in a Qemu riscv64 environment and then uploaded using
 
 ```
-$ snapcraft upload --release=stable aedit_1.1.71_riscv64.snap
+$ snapcraft upload --release=stable aedit_1.1.82_riscv64.snap
 ```
 
 ### i386
@@ -75,5 +75,5 @@ $ snapcraft upload --release=stable aedit_1.1.71_riscv64.snap
 The `i386` snap package is built using Ubuntu 18.04 running in an i686 VM and then uploaded using
 
 ```
-$ snapcraft upload --release=stable aedit_1.1.71_i386.snap
+$ snapcraft upload --release=stable aedit_1.1.82_i386.snap
 ```
