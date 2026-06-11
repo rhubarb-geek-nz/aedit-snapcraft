@@ -9,7 +9,7 @@ These are the files used to describe the [snap package for aedit](https://snapcr
 The simplest starting point is a Ubuntu environment which has `snap`/`snapd` already installed and working. Add the `snapcraft` tool.
 
 - 18.04 $ `sudo apt install snapcraft`
-- 22.04 $ `sudo snap install snapcraft --classic`
+- 24.04 $ `sudo snap install snapcraft --classic`
 
 Your user needs to belong to the `lxd` group. You may need to initaliase `lxd` wth 
 
